@@ -1,5 +1,5 @@
 <?php
-    include 'conexion.php';
+    include '../model/conexion.php';
     
     $NOMBRE=$_POST['nombre'];
     $APELLIDOS=$_POST['apellidos'];

@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!--CSS-->
-  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="view/css/materialize.min.css" media="screen,projection" />
 
-  <link media="screen" href="../css/DSI.css" type="text/css" rel="stylesheet">
+  <link media="screen" href="view/css/DSI.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="../img/retrowall.jpg" alt="retro image">
+      <img src="view/img/retrowall.jpg" alt="retro image">
     </div>
   </div>
   <br>
@@ -55,7 +55,7 @@
         <h6 class="white-text">Entrar al portal STEWIE</h6>
         <br>
         <!-- Modal Structure -->
-        <form name="registro" method="post" action="login_datos.php">
+        <form name="registro" method="post" action="/controller/login_datos.php">
           <input class=" white-text" type="text" name="nombre-usuario" placeholder="Nombre de usuario" id="nombre-usuario">
           <input class=" white-text" type="password" name="password" placeholder="Contraseña" id="password">
           <input class="left btn waves-effect waves-light  indigo darken-3" type="submit" name="action">
@@ -68,11 +68,11 @@
         <div class="carousel carousel-slider">
           <a class=" carousel-item">
             <h2>Juegos</h2>
-            <img src="../img/juegos.png">
+            <img src="view/img/juegos.png">
           </a>
           <a class=" carousel-item">
             <h2>Foros</h2>
-            <img src="../img/foros.jpg">
+            <img src="view/img/foros.jpg">
           </a>
         </div>
       </div>
@@ -88,7 +88,7 @@
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
-          <form name="registro" method="post" action="procesar_datos.php">
+          <form name="registro" method="post" action="/controller/procesar_datos.php">
             <div class="modal-content">
               <input class=" black-text" type="text" name="nombre" placeholder="Nombre" id="nombre">
               <input class=" black-text" type="text" name="apellidos" placeholder="Apellidos" id="apellido">
@@ -121,9 +121,9 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="view/js/materialize.min.js"></script>
 
-  <script type="text/javascript" src="../js/javascript.js"></script>
+  <script type="text/javascript" src="view/js/javascript.js"></script>
 
 </body>
 
