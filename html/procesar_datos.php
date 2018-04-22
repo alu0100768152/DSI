@@ -1,4 +1,6 @@
 <?php
+    include 'conexion.php';
+    
     $NOMBRE=$_POST['nombre'];
     $APELLIDOS=$_POST['apellidos'];
     $USUARIO=$_POST['nombre-usuario'];
@@ -11,7 +13,6 @@
         isset ($_POST['email']) && !empty ($_POST['email']) &&
         isset ($_POST['password']) && !empty ($_POST['password']))
     {
-        $ENLACE_BD = mysqli_connect("localhost","root","","dsi") or die("ERROR: No se conectó a la BD");
         // mysql_select_db(dsi,$ENLACE_BD) or die ("ERROR: No se pudo acceder a la BD");
 
         mysqli_query($ENLACE_BD,"INSERT INTO registro_usuario VALUES('$NOMBRE','$APELLIDOS','$USUARIO','$CORREO','$CONTRASEÑA')");
