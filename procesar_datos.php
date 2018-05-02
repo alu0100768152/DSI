@@ -1,5 +1,5 @@
 <?php
-    include 'conexion.php';
+    require '/opt/lampp/htdocs/dsi/model/conexion.php';
     
     $NOMBRE=$_POST['nombre'];
     $APELLIDOS=$_POST['apellidos'];
