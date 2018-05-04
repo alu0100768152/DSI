@@ -1,5 +1,6 @@
 <?php
-    require '/opt/lampp/htdocs/dsi/model/conexion.php';
+    //require '/opt/lampp/htdocs/dsi/model/conexion.php'; //Oscar
+    require 'C:\xampp\htdocs\dsi\model\conexion.php'; //Cristian
     
     $NOMBRE=$_POST['nombre'];
     $APELLIDOS=$_POST['apellidos'];
