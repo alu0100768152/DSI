@@ -36,52 +36,76 @@ function nif(dni) {
 }
 
 function AgregarLineaDeTexto() {
-	var TextoLinea=document.getElementById("objeto").value;
+  var TextoLinea=document.getElementById("objeto").value;
     document.getElementById("añadir_texto").innerHTML += "<br>" + TextoLinea;  // Agrego nueva linea antes
 }
- function Verifica_notif(){
-    var compro_nombre= document.getElementById("textarea1").value;
-    if(compro_nombre==''){
-       document.getElementById("capa5").innerHTML = "Inserte novedad";
-       return false;
-    }
-    else{
-        document.getElementById("capa5").innerHTML = " ";
-        return true;    
-    }
-}
- function Verifica_nom(){
+//  function Verifica_notif(){
+//     var compro_nombre= document.getElementById("textarea1").value;
+//     if(compro_nombre==''){
+//        document.getElementById("capa5").innerHTML = "Inserte novedad";
+//        return false;
+//     }
+//     else{
+//         document.getElementById("capa5").innerHTML = " ";
+//         return true;    
+//     }
+// }
+
+function Verifica_nom(){
     var compro_nombre= document.getElementById("nombre").value;
     if(compro_nombre==''){
-        document.getElementById("capa2").innerHTML = "Inserte nombre";
+        document.getElementById("capa1").innerHTML = "Inserte nombre";
         return false;    
 
     }
     else{
-        document.getElementById("capa2").innerHTML = " ";
+        document.getElementById("capa1").innerHTML = " ";
         return true;
     }
-}
- function Verifica_ap(){
+} 
+function Verifica_ap(){
     var compro_apellido= document.getElementById("apellido").value;
     if(compro_apellido==''){
-       document.getElementById("capa3").innerHTML = "Inserte apellido";
+       document.getElementById("capa2").innerHTML = "Inserte apellido";
        return false;    
 
+    }
+    else{
+        document.getElementById("capa2").innerHTML = " ";
+        return true;    
+    }
+}
+ function Verifica_usu(){
+    var compro_usuario= document.getElementById("nombre_usuario").value;
+    if(compro_usuario==''){
+       document.getElementById("capa3").innerHTML = "Inserte usuario";
+       return false;    
     }
     else{
         document.getElementById("capa3").innerHTML = " ";
         return true;    
     }
 }
- function Verifica_pass(){
-    var compro_password= document.getElementById("password").value;
-    if(compro_password==''){
-       document.getElementById("capa4").innerHTML = "Inserte password";
+
+ function Verifica_email(){
+    var compro_email= document.getElementById("email").value;
+    if(compro_email==''){
+       document.getElementById("capa4").innerHTML = "Inserte email";
        return false;    
     }
     else{
         document.getElementById("capa4").innerHTML = " ";
+        return true;    
+    }
+}
+ function Verifica_pass(){
+    var compro_password= document.getElementById("password").value;
+    if(compro_password==''){
+       document.getElementById("capa5").innerHTML = "Inserte password";
+       return false;    
+    }
+    else{
+        document.getElementById("capa5").innerHTML = " ";
         return true;    
     }
 }
@@ -117,14 +141,14 @@ function Verifica2(){
 
 
 
-function Verifica_all(){
+// function Verifica_all(){
     
-    if(Verifica_nom()==true && Verifica_ap()==true && Verifica_pass()==true && Verifica2()==true){
-        return true;
-    }else{
-      return false;
-    }
-}
+//     if(Verifica_nom()==true && Verifica_ap()==true && Verifica_pass()==true && Verifica2()==true){
+//         return true;
+//     }else{
+//       return false;
+//     }
+// }
 // var capa = document.getElementById("capa");
 // var h1 = document.createElement("h1");
 // h1.innerHTML = document.getElementById("texto");
