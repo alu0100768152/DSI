@@ -1,6 +1,6 @@
 <?php
-    require '/opt/lampp/htdocs/dsi/model/conexion.php';
-    
+    //require '/opt/lampp/htdocs/dsi/model/conexion.php'; //Oscar
+    require 'C:\xampp\htdocs\dsi\model\conexion.php'; //Cristian
     $TITULO=$_POST['titulo'];
     $CONTENIDO=$_POST['contenido'];
    
